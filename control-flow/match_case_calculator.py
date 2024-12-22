@@ -1,8 +1,8 @@
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
-operation_type = input("choose the type of operation(+, -, *, /) :")
+operation= input("choose the type of operation(+, -, *, /) :")
 
-match operation_type:
+match operation:
     case "+":
         result = num1 + num2
         print(f"The result is {result}")

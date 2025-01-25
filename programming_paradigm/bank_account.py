@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class BankAccount :
     def __init__(self, initial_balance=0):
         # Initialize the account balance, defaulting to zero
@@ -23,3 +24,21 @@ class BankAccount :
     def display_balance(self):
         """Display the current account balance."""
         print(f"Current balance: ${self.account_balance:.2f}")
+=======
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        self.account_balance = initial_balance
+
+    def deposit(self, amount):
+        self.account_balance += amount
+
+    def withdraw(self, amount):
+        if self.account_balance >= amount:
+            self.account_balance -= amount
+            return True
+        else:
+            return False
+
+    def display_balance(self):
+        print(f"Current Balance: ${self.account_balance:.2f}")
+>>>>>>> 0fc109382dfa912d4c9cf327941a8e06bca923be
